@@ -48,7 +48,7 @@
         "on" : "http://927d06b8-89a6-4984-bcff-823aa00c38b5"
       } ],
       "otherContent" : [ {
-        "@id" : "https://iiif-test.github.io/Jan2022/annotations/f77764096aaf6ef68ce34253dbcf0823.json",
+        "@id" : "https://dnoneill.github.io/Jan2022/annotations/f77764096aaf6ef68ce34253dbcf0823.json",
         "@type" : "sc:AnnotationList",
         "label" : "My fantastic annotations"
       } ],
