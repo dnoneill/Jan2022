@@ -1,0 +1,85 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://iiif-test.github.io/Jan2022/manifests/manifest2.json",
+  "@type" : "sc:Manifest",
+  "label" : "January 2022 Manifest",
+  "service" : {
+    "profile" : "http://iiif.io/api/search/0/search",
+    "@id" : "https://dev.gdmrdigital.com/search-api/1240244679/101010554321885379400/3a4d058e3a79f1e1e38251e80f1ddddd/search",
+    "@context" : "http://iiif.io/api/search/0/context.json"
+  },
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "[Click to edit description]",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "[Click to edit attribution]",
+  "sequences" : [ {
+    "@id" : "http://eb6bf608-734d-4f1d-8fe7-be2e22e7ed27",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://927d06b8-89a6-4984-bcff-823aa00c38b5",
+      "@type" : "sc:Canvas",
+      "label" : "Internet Archive Image",
+      "height" : 3024,
+      "width" : 4032,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://975d13ab-399e-4c74-8a4d-aeb1fa0266b9",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/img-0353/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/img-0353",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 3024,
+          "width" : 4032
+        },
+        "on" : "http://927d06b8-89a6-4984-bcff-823aa00c38b5"
+      } ],
+      "otherContent" : [ {
+        "@id" : "https://iiif-test.github.io/Jan2022/annotations/f77764096aaf6ef68ce34253dbcf0823.json",
+        "@type" : "sc:AnnotationList",
+        "label" : "My fantastic annotations"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://c936d3c4-79b2-4bd9-af69-5c264834ee55",
+      "@type" : "sc:Canvas",
+      "label" : "Workbench Image",
+      "height" : 3024,
+      "width" : 4032,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://1e8e98ef-a882-43bd-9136-47cd46662cb8",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif-test.github.io/Jan2022/images/IMG_9069/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif-test.github.io/Jan2022/images/IMG_9069",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 3024,
+          "width" : 4032
+        },
+        "on" : "http://c936d3c4-79b2-4bd9-af69-5c264834ee55"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ ]
+}

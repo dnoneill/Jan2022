@@ -1,93 +1,109 @@
 {
-    "@context": "http://iiif.io/api/presentation/2/context.json", 
-    "type": "oa:AnnotationList", 
-    "id": "/Jan2022/annotations/f77764096aaf6ef68ce34253dbcf0823-list", 
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "id": "/Jan2022/annotations/f77764096aaf6ef68ce34253dbcf0823-list",
+    "type": "oa:AnnotationList",
     "resources": [
         {
+            "@context": "file:/usr/local/tomcat/webapps/ROOT/contexts/iiif-2.0.json",
+            "@id": "https://dev.gdmrdigital.com/annotation/anno/1643283482094.json",
+            "@type": "oa:Annotation",
+            "dcterms:created": "2022-01-27T11:38:02",
+            "dcterms:creator": "https://dev.gdmrdigital.com/user/1240244679/101010554321885379400",
+            "dcterms:modified": "2022-01-27T11:38:02",
+            "motivation": [
+                "oa:commenting",
+                "oa:tagging"
+            ],
             "on": [
                 {
-                    "within": {
-                        "@id": "https://iiif-test.github.io/Jan2022/manifests/manifest2.json", 
-                        "@type": "sc:Manifest"
-                    }, 
-                    "@type": "oa:SpecificResource", 
-                    "full": "http://927d06b8-89a6-4984-bcff-823aa00c38b5", 
+                    "@type": "oa:SpecificResource",
+                    "full": "http://927d06b8-89a6-4984-bcff-823aa00c38b5",
                     "selector": {
+                        "@type": "oa:Choice",
                         "default": {
-                            "@type": "oa:FragmentSelector", 
+                            "@type": "oa:FragmentSelector",
                             "value": "xywh=318,767,795,662"
-                        }, 
+                        },
                         "item": {
-                            "@type": "oa:SvgSelector", 
-                            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M318.02536,767.17908h397.70365v0h397.70365v331.14263v331.14263h-397.70365h-397.70365v-331.14263z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_c9189ba7-46f3-42fe-93b8-b3b53585ba85\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
-                        }, 
-                        "@type": "oa:Choice"
+                            "@type": "oa:SvgSelector",
+                            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M318.02536,767.17908h397.70365v0h397.70365v331.14263v331.14263h-397.70365h-397.70365v-331.14263z\"  id=\"rectangle_c9189ba7-46f3-42fe-93b8-b3b53585ba85\" fill-opacity=\"0.00001\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"38.69482\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                        }
+                    },
+                    "within": {
+                        "@id": "https://iiif-test.github.io/Jan2022/manifests/manifest.json",
+                        "@type": "sc:Manifest"
                     }
                 }
-            ], 
-            "motivation": [
-                "oa:tagging", 
-                "oa:commenting"
-            ], 
+            ],
             "resource": [
                 {
-                    "chars": "plant", 
-                    "http://dev.llgc.org.uk/sas/full_text": "plant", 
-                    "@type": "oa:Tag"
-                }, 
+                    "@type": "dctypes:Text",
+                    "chars": "<p>Tree</p>",
+                    "format": "text/html",
+                    "http://dev.llgc.org.uk/sas/full_text": "Tree"
+                },
                 {
-                    "chars": "<p>Tree</p>", 
-                    "http://dev.llgc.org.uk/sas/full_text": "Tree", 
-                    "@type": "dctypes:Text", 
-                    "format": "text/html"
+                    "@type": "oa:Tag",
+                    "chars": "plant"
+                },
+                {
+                    "@type": "oa:Tag",
+                    "chars": "tree"
                 }
-            ], 
-            "dcterms:creator": "https://dev.gdmrdigital.com/user/1240244679/101010554321885379400", 
-            "dcterms:created": "2022-01-27T11:38:02", 
-            "@context": "file:/usr/local/tomcat/webapps/ROOT/contexts/iiif-2.0.json", 
-            "dcterms:modified": "2022-01-27T11:38:02", 
-            "@id": "https://dev.gdmrdigital.com/annotation/anno/1643283482094.json", 
-            "@type": "oa:Annotation"
-        }, 
+            ],
+            "oa:serializedAt": "2022-06-07T20:23:53.580Z",
+            "oa:annotatedBy": [
+                "dnoneill"
+            ]
+        },
         {
+            "@context": "file:/usr/local/tomcat/webapps/ROOT/contexts/iiif-2.0.json",
+            "@id": "https://dev.gdmrdigital.com/annotation/anno/1643283458070.json",
+            "@type": "oa:Annotation",
+            "dcterms:created": "2022-01-27T11:37:39",
+            "dcterms:creator": "https://dev.gdmrdigital.com/user/1240244679/101010554321885379400",
+            "dcterms:modified": "2022-01-27T11:37:39",
+            "motivation": [
+                "oa:commenting",
+                "oa:tagging"
+            ],
+            "oa:annotatedBy": [
+                "dnoneill"
+            ],
+            "oa:serializedAt": "2022-06-07T20:19:25.556Z",
             "on": [
                 {
-                    "within": {
-                        "@id": "https://iiif-test.github.io/Jan2022/manifests/manifest2.json", 
-                        "@type": "sc:Manifest"
-                    }, 
-                    "@type": "oa:SpecificResource", 
-                    "full": "http://927d06b8-89a6-4984-bcff-823aa00c38b5", 
+                    "@type": "oa:SpecificResource",
+                    "full": "http://927d06b8-89a6-4984-bcff-823aa00c38b5",
                     "selector": {
+                        "@type": "oa:Choice",
                         "default": {
-                            "@type": "oa:FragmentSelector", 
+                            "@type": "oa:FragmentSelector",
                             "value": "xywh=1644,719,1903,1621"
-                        }, 
+                        },
                         "item": {
-                            "@type": "oa:SvgSelector", 
-                            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1643.92076,719.25515h951.49128v0h951.49128v810.38193v810.38193h-951.49128h-951.49128v-810.38193z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_14934d92-85d0-477d-bfc3-23c7771286d4\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
-                        }, 
-                        "@type": "oa:Choice"
+                            "@type": "oa:SvgSelector",
+                            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1643.92076,719.25515h951.49128v0h951.49128v810.38193v810.38193h-951.49128h-951.49128v-810.38193z\"  id=\"rectangle_14934d92-85d0-477d-bfc3-23c7771286d4\" fill-opacity=\"0.00001\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"38.69482\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                        }
+                    },
+                    "within": {
+                        "@id": "https://iiif-test.github.io/Jan2022/manifests/manifest.json",
+                        "@type": "sc:Manifest"
                     }
                 }
-            ], 
-            "motivation": [
-                "oa:commenting"
-            ], 
+            ],
             "resource": [
                 {
-                    "chars": "<p>Tractor</p>", 
-                    "http://dev.llgc.org.uk/sas/full_text": "Tractor", 
-                    "@type": "dctypes:Text", 
-                    "format": "text/html"
+                    "@type": "dctypes:Text",
+                    "chars": "<p>Tractor</p>",
+                    "format": "text/html",
+                    "http://dev.llgc.org.uk/sas/full_text": "Tractor"
+                },
+                {
+                    "@type": "oa:Tag",
+                    "chars": "tractor"
                 }
-            ], 
-            "dcterms:creator": "https://dev.gdmrdigital.com/user/1240244679/101010554321885379400", 
-            "dcterms:created": "2022-01-27T11:37:39", 
-            "@context": "file:/usr/local/tomcat/webapps/ROOT/contexts/iiif-2.0.json", 
-            "dcterms:modified": "2022-01-27T11:37:39", 
-            "@id": "https://dev.gdmrdigital.com/annotation/anno/1643283458070.json", 
-            "@type": "oa:Annotation"
+            ]
         }
     ]
 }
