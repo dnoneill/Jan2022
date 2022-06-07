@@ -1,0 +1,5 @@
+baseurl: /Jan2022
+collections:
+  annotations:
+    output: true
+    permalink: /annotations/:name
