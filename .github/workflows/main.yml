@@ -4,8 +4,7 @@ on:
     branches:
       - main
     paths:
-      - annotations/**
-      - _annotations
+      - _annotations/**
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -16,5 +15,21 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-    
+      
+      - run: 'jekyll build'
+      - run: python3 -c "exec(\"for file in glob.glob('_site/annotations/*-list.json'):\n\tjsoncontents = json.load(open(file))\n\tfilename = os.path.basename(file).replace('-list', '')\n\twith open(os.path.join('annotations/{}'.format(filename)), 'w') as f:\n\t\tf.write(json.dumps(jsoncontents, indent=4))\")"
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config pull.rebase false
+          git add -A
+          git commit -m "convert _annotations to annotations" -a || echo "No changes to commit"
+      - name: pull
+        run: git pull origin main
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main 
     
