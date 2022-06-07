@@ -15,8 +15,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
-      - run: 'jekyll build'
+      - run: gem install jekyll
+      - run: jekyll build
       - run: python3 -c "exec(\"for file in glob.glob('_site/annotations/*-list.json'):\n\tjsoncontents = json.load(open(file))\n\tfilename = os.path.basename(file).replace('-list', '')\n\twith open(os.path.join('annotations/{}'.format(filename)), 'w') as f:\n\t\tf.write(json.dumps(jsoncontents, indent=4))\")"
       - name: commit files
         run: |
