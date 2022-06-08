@@ -39,3 +39,4 @@ def annotations():
         filename = os.path.basename(file).replace('-list', '')
         with open(os.path.join('annotations/{}'.format(filename)), 'w') as f:
             f.write(json.dumps(jsoncontents, indent=4))
+    shutil.rmtree('_site')
