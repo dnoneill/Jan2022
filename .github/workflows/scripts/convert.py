@@ -1,6 +1,6 @@
 import glob, json, os, shutil
 
-def _annotations():
+def annotations():
     if len(glob.glob('_annotations')) > 0:
         shutil.rmtree('_annotations')
     os.mkdir('_annotations')
@@ -32,7 +32,7 @@ def _annotations():
                     f.write(text)
 
 
-def annotations():
+def _annotations():
     os.system("jekyll build")
     for file in glob.glob('_site/annotations/*-list.json'):
         jsoncontents = json.load(open(file))
