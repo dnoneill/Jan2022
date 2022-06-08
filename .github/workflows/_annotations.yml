@@ -1,4 +1,4 @@
-name: Test
+name: change in _annotations
 on:
   workflow_dispatch:
   push:
