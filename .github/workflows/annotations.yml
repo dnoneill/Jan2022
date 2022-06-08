@@ -16,14 +16,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - run: sudo gem install jekyll
       - run: python -c 'import convert; convert.annotations()'
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git config pull.rebase false
-          git add -A
+          git add _annotations
           git commit -m "convert annotations to _annotations" -a || echo "No changes to commit"
       - name: pull
         run: git pull origin main
