@@ -17,7 +17,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - run: sudo gem install jekyll
-      - run: python -c 'import convert; convert.annotations()'
+      - run: python -c 'import convert; convert._annotations()'
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
