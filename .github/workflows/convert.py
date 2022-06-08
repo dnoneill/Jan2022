@@ -30,6 +30,7 @@ def annotations():
                 with open('_annotations/{}'.format(filename), 'w') as f:
                     text = '''---\ncanvas: '{}'\norder: {}\n---\n{}'''.format(canvas, order, json.dumps(item,indent=4))
                     f.write(text)
+    shutil.rmtree('__pycache__')
 
 
 def _annotations():
@@ -40,3 +41,4 @@ def _annotations():
         with open(os.path.join('annotations/{}'.format(filename)), 'w') as f:
             f.write(json.dumps(jsoncontents, indent=4))
     shutil.rmtree('_site')
+    shutil.rmtree('__pycache__')

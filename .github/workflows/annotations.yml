@@ -1,4 +1,9 @@
 name: change in annotations
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   workflow_dispatch:
   push:
@@ -17,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - run: cp .github/workflows/convert.py .
-      - run: python -c 'import convert; convert.annotations()'
+      - run: python3 -c 'import convert; convert.annotations()'
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
