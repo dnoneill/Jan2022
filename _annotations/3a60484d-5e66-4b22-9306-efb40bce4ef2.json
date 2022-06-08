@@ -1,0 +1,49 @@
+---
+canvas: "http://c936d3c4-79b2-4bd9-af69-5c264834ee55"
+order: 2
+---
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@type": "oa:Annotation",
+    "motivation": [
+        "oa:tagging",
+        "oa:commenting"
+    ],
+    "resource": [
+        {
+            "@type": "oa:Tag",
+            "chars": "grass"
+        },
+        {
+            "@type": "dctypes:Text",
+            "format": "text/html",
+            "chars": "<p>grass</p>"
+        }
+    ],
+    "on": [
+        {
+            "@type": "oa:SpecificResource",
+            "full": "http://c936d3c4-79b2-4bd9-af69-5c264834ee55",
+            "selector": {
+                "@type": "oa:Choice",
+                "default": {
+                    "@type": "oa:FragmentSelector",
+                    "value": "xywh=-2,1687,4058,391"
+                },
+                "item": {
+                    "@type": "oa:SvgSelector",
+                    "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M-2,1687.02879h2028.90211v0h2028.90211v195.44146v195.44146h-2028.90211h-2028.90211v-195.44146z\"  id=\"rectangle_1bdaaaa2-1450-418c-b187-81a94757e6f5\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                }
+            },
+            "within": {
+                "@id": "https://iiif-test.github.io/Jan2022/manifests/manifest.json",
+                "@type": "sc:Manifest"
+            }
+        }
+    ],
+    "oa:annotatedAt": "2022-06-08T18:57:58.795Z",
+    "@id": "3a60484d-5e66-4b22-9306-efb40bce4ef2.json",
+    "oa:annotatedBy": [
+        "dnoneill"
+    ]
+}
