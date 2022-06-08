@@ -1,10 +1,10 @@
 {
-    "@context": "http://iiif.io/api/presentation/2/context.json", 
-    "label": "All annotations loaded in iiif-test/Jan2022 project", 
-    "@id": "https://iiif-test.github.io/Jan2022/annotations/collection.json", 
-    "@type": "sc:Layer", 
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "label": "All annotations loaded in iiif-test/Jan2022 project",
+    "@id": "https://iiif-test.github.io/Jan2022/annotations/collection.json",
+    "@type": "sc:Layer",
     "otherContent": [
-        "/Jan2022/annotations/f77764096aaf6ef68ce34253dbcf0823-list.json", 
-        "/Jan2022/annotations/c936d3c4-79b2-4bd9-af69-5c264834ee55-list.json"
+        "https://iiif-test.github.io/Jan2022/annotations/c936d3c4-79b2-4bd9-af69-5c264834ee55-list.json",
+        "https://iiif-test.github.io/Jan2022/annotations/f77764096aaf6ef68ce34253dbcf0823-list.json"
     ]
 }
