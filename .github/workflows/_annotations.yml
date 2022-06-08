@@ -16,6 +16,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - run: sudo gem install jekyll
       - run: cp .github/workflows/convert.py .
       - run: python -c 'import convert; convert._annotations()'
       - run: rm -r .github/workflows/convert.py .jekyll-cache
