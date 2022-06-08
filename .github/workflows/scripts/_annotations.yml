@@ -17,9 +17,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - run: sudo gem install jekyll
-      - run: jekyll build
-      - run: python3 -c "exec(\"import glob, json, os\nfor file in glob.glob('_site/annotations/*-list.json'):\n\tjsoncontents = json.load(open(file))\n\tfilename = os.path.basename(file).replace('-list', '')\n\twith open(os.path.join('annotations/{}'.format(filename)), 'w') as f:\n\t\tf.write(json.dumps(jsoncontents, indent=4))\")"
-      - run: sudo rm -r _site
+      - run: python -c 'import convert; convert.annotations()'
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
