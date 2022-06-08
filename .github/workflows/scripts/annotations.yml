@@ -1,4 +1,4 @@
-name: change in _annotations
+name: change in annotations
 on:
   workflow_dispatch:
   push:
