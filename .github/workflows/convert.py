@@ -1,4 +1,4 @@
-import glob, json, os, shutil
+import glob, json, os, shutil, re
 
 def annotations():
     if len(glob.glob('_annotations')) > 0:
@@ -35,10 +35,20 @@ def annotations():
 
 def _annotations():
     os.system("jekyll build")
+    filenames = []
+    collectionsfile = 'annotations/collection.json'
+    collectionjson = json.load(open(collectionsfile))
+    collurl = re.search('https:\/\/(.*?)\/', collectionjson['@id'])
     for file in glob.glob('_site/annotations/*-list.json'):
         jsoncontents = json.load(open(file))
+        url = collurl.group(0).strip('/') + jsoncontents['id'].replace('.json', '') + '.json'
+        filenames.append(url)
         filename = os.path.basename(file).replace('-list', '')
         with open(os.path.join('annotations/{}'.format(filename)), 'w') as f:
             f.write(json.dumps(jsoncontents, indent=4))
     shutil.rmtree('_site')
+    
+    collectionjson['otherContent'] = filenames
+    with open(collectionsfile, 'w') as f:
+        f.write(json.dumps(collectionjson, indent=4))
     shutil.rmtree('__pycache__')
