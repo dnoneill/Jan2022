@@ -3,6 +3,6 @@ images:
 manifests:
 - ''
 settings:
-  tempuser: enabled
+  tempuser: notenabled
   viewer: mirador
   widgets: comment-with-purpose, tag, geotagging
